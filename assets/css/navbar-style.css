@@ -1,0 +1,51 @@
+a {
+	text-decoration: none;
+	color: #212529;
+}
+
+a:hover {
+	color: #212529;
+}
+
+.profile-image {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+
+.img-user {
+	width: 10px;
+	height: 10px;
+}
+
+.user-img-color {
+	color: #7f7f7f;
+}
+
+.navbar-toggler {
+	border: 0px;
+}
+
+
+
+.nav-profile-text {
+	text-align: left;
+}
+
+.nav-profile-text-right {
+	text-align: right;
+}
+
+.sticky-top-2 {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 64px;
+	z-index: 1030;
+}
+
+.bg-dias{
+	background-color: #fca52d !important;
+}
+
+
+

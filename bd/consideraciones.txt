@@ -1,0 +1,13 @@
+* Hay que activar los eventos en Mysql para que funcione las tareas programas del histórico de reservas.
+
+* Borrado en cascada para las aulas - sesiones:
+
+ALTER TABLE `sesion`
+	DROP FOREIGN KEY `c_fk_sesion_tiene_lugar_en_id`;
+
+ALTER TABLE `sesion` 
+	DROP INDEX  `index_foreignkey_sesion_tiene_lugar_en`;
+
+
+ALTER TABLE `sesion`
+ ADD CONSTRAINT `c_fk_sesion_tiene_lugar_en_id` FOREIGN KEY (`tiene_lugar_en_id`) REFERENCES `aula` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
